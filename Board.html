@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Jessica Pitherin | 2018.12.15 -->
+
+<html>
+  <head>
+    <Title>Tic Tac Toe</Title>
+    <link href="./Board.css" type="text/css"
+	rel="stylesheet">
+  </head>
+
+  <body >
+    <h1>Tic Tac Toe</h1>
+    <h1>
+      Turn number is:
+      <span id="TurnDisplay"></span>
+    </h1>
+    <button id="Reset">Reset</button>
+       
+    <table id="board" align="center">
+      <tr>
+        <!-- Bot -->
+        <td id="Box1">
+          <img src="https://images.kissclipart.com/show/a36c0a6cdbbd2444a6695ef6593b6bf1/L4Dxd3E5UME5OWM1T5H1dIGye7r6kBNtcaFmiuY2d3jshLa0gv91NZpoh9C2Y3zsgLL5lL1qdqVqitDudD3lf8W0gB9ueKZ5feQ2aXPyfsS0WfUxO5VoStVuMEW4doToUr5xdpg=/kissclipart-white-bot-icon-clipart-internet-bot-computer-icons-9e03dc2ce055f3a2.png" class = "marker-img">
+        </td>
+        
+        <!-- Human -->
+        <td id="Box2">
+          <img src="https://images.kissclipart.com/show/901c69bb1a0549c50ffb20214463bf64/L4Dxd3E5UME5OGo1SpH1eYeye7r6kBNtcaFmiuY2Y3BwgMb7hgIufaRqip9yY3BxPbTzigBieqUyhNN5dHBzPbT2jgB2fJZ3Rdtsb372Pca0gvFibWJmftRrZHK7QoLpgr5xdpg=/kissclipart-computer-user-icon-clipart-laptop-computer-icons-u-baae1afbbdb821bb.png" class = "marker-img">
+        </td>
+        
+        <!-- Interact -->
+        <td id="Box3" onclick="document.getElementById('MarkerImg').src='https://images.kissclipart.com/show/a36c0a6cdbbd2444a6695ef6593b6bf1/L4Dxd3E5UME5OWM1T5H1dIGye7r6kBNtcaFmiuY2d3jshLa0gv91NZpoh9C2Y3zsgLL5lL1qdqVqitDudD3lf8W0gB9ueKZ5feQ2aXPyfsS0WfUxO5VoStVuMEW4doToUr5xdpg=/kissclipart-white-bot-icon-clipart-internet-bot-computer-icons-9e03dc2ce055f3a2.png'">
+          <img id="MarkerImg" src="https://images.kissclipart.com/show/901c69bb1a0549c50ffb20214463bf64/L4Dxd3E5UME5OGo1SpH1eYeye7r6kBNtcaFmiuY2Y3BwgMb7hgIufaRqip9yY3BxPbTzigBieqUyhNN5dHBzPbT2jgB2fJZ3Rdtsb372Pca0gvFibWJmftRrZHK7QoLpgr5xdpg=/kissclipart-computer-user-icon-clipart-laptop-computer-icons-u-baae1afbbdb821bb.png" class = "marker-img"/> <!--style="display: none;"-->
+        </td>
+        
+      </tr>
+      <tr>
+        <td id="Box4"></td>
+        <td id="Box5"></td>
+        <td id="Box6"></td>
+      </tr>
+      <tr>
+        <td id="Box7"></td>
+        <td id="Box8"></td>
+        <td id="Box9"></td>
+      </tr>
+    </table>
+   
+  <script type="text/javascript" src="Board.js" ></script>
+  </body>
+  
+</html>
