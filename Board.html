@@ -9,30 +9,27 @@
   </head>
 
   <body >
-    <h1>Tic Tac Toe</h1>
-    <h1>
-      Turn number is:
-      <span id="TurnDisplay"></span>
-    </h1>
-    <button id="Reset">Reset</button>
+    <sidebar>Tic Tac Toe</sidebar>
+    <h2 class="scoreboard">
+      <!--Score Board -->
+      <div class="players">
+        <img id="human-player" src='https://png2.kisspng.com/sh/055cf79fca2b2030d69d28bbbe1c0d95/L0KzQYm3VMI2N6pvj5H0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TfJtaZRwRelxaYToPcHsjCBtbV5oitt9aXPkfH7wjPxvbaR4RadqZUC0dbO3U8BmP2Q9Rqk6M0e6Q4eBUcUzPGc4T6UBMEKzQIS1kP5o/kisspng-computer-icons-black-white-people-critical-illness-5ae01eb030e738.7137736815246373602003.png'/>
+        <img id="bot-player" src='https://png2.kisspng.com/sh/b66b0369429cdd316fd87cf648a4afe7/L0KzQYm3VsE0N5p0fpH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TflvfJZ3htd9LXLyhH75jBJwfF5ohNt5LXH1hH7ojvdzgV5yhAZxZYKwRbO5Uck6O5M8ethtOUaxR4i7V8k6QGI2TaQDOUK7RYi4VcA4QV91htk=/kisspng-computer-icons-internet-bot-robot-clip-art-angry-mother-5b21993b7bfd96.7747998115289285715079.png'/>
+      </div>
+      <div>
+        Turn number:
+        <span id="TurnDisplay"></span>
+      </div>
+      <div>
+        <button id="Reset">Reset</button>
+      </div>
+    </h2>
        
     <table id="board" align="center">
       <tr>
-        <!-- Bot -->
-        <td id="Box1">
-          <img src="https://images.kissclipart.com/show/a36c0a6cdbbd2444a6695ef6593b6bf1/L4Dxd3E5UME5OWM1T5H1dIGye7r6kBNtcaFmiuY2d3jshLa0gv91NZpoh9C2Y3zsgLL5lL1qdqVqitDudD3lf8W0gB9ueKZ5feQ2aXPyfsS0WfUxO5VoStVuMEW4doToUr5xdpg=/kissclipart-white-bot-icon-clipart-internet-bot-computer-icons-9e03dc2ce055f3a2.png" class = "marker-img">
-        </td>
-        
-        <!-- Human -->
-        <td id="Box2">
-          <img src="https://images.kissclipart.com/show/901c69bb1a0549c50ffb20214463bf64/L4Dxd3E5UME5OGo1SpH1eYeye7r6kBNtcaFmiuY2Y3BwgMb7hgIufaRqip9yY3BxPbTzigBieqUyhNN5dHBzPbT2jgB2fJZ3Rdtsb372Pca0gvFibWJmftRrZHK7QoLpgr5xdpg=/kissclipart-computer-user-icon-clipart-laptop-computer-icons-u-baae1afbbdb821bb.png" class = "marker-img">
-        </td>
-        
-        <!-- Interact -->
-        <td id="Box3" onclick="document.getElementById('MarkerImg').src='https://images.kissclipart.com/show/a36c0a6cdbbd2444a6695ef6593b6bf1/L4Dxd3E5UME5OWM1T5H1dIGye7r6kBNtcaFmiuY2d3jshLa0gv91NZpoh9C2Y3zsgLL5lL1qdqVqitDudD3lf8W0gB9ueKZ5feQ2aXPyfsS0WfUxO5VoStVuMEW4doToUr5xdpg=/kissclipart-white-bot-icon-clipart-internet-bot-computer-icons-9e03dc2ce055f3a2.png'">
-          <img id="MarkerImg" src="https://images.kissclipart.com/show/901c69bb1a0549c50ffb20214463bf64/L4Dxd3E5UME5OGo1SpH1eYeye7r6kBNtcaFmiuY2Y3BwgMb7hgIufaRqip9yY3BxPbTzigBieqUyhNN5dHBzPbT2jgB2fJZ3Rdtsb372Pca0gvFibWJmftRrZHK7QoLpgr5xdpg=/kissclipart-computer-user-icon-clipart-laptop-computer-icons-u-baae1afbbdb821bb.png" class = "marker-img"/> <!--style="display: none;"-->
-        </td>
-        
+        <td id="Box1"></td>
+        <td id="Box2"></td>
+        <td id="Box3"></td>        
       </tr>
       <tr>
         <td id="Box4"></td>
