@@ -1,4 +1,6 @@
 # WebApp_TicTacToe
+<em>Created as part of a web dev hackathon</em>
+
 To Do:
 9) DB to store number of games won during the session
 10) Winner trophy pop-up modal @ game end
